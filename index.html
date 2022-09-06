@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+    <body>
+        <section class="showcase ">
+            <header>
+                <h2 class="logo">Exlpore</h2>
+                <div class="toggle "></div>
+            </header>
+
+            <video src="./190301_1_25_11.mp4" muted loop autoplay></video>
+
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Dreams</h2>
+                <h3>Comes True</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores praesentium, odio beatae dolorem tenetur ab nisi commodi unde quis quasi eligendi ut quos sunt exercitationem animi nesciunt asperiores harum.</p>
+                <a href="#">Steps</a>
+            </div>
+            <ul class="social">
+                <li><a href="#"><img src="./facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="./github.png" alt=""></a></li>
+                <li><a href="#"><img src="./instagram.png" alt=""></a></li>
+            </ul>
+        </section>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <script>
+            const menuToggle = document.querySelector('.toggle')
+            const showcase = document.querySelector('.showcase')
+
+
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active')
+                showcase.classList.toggle('active')
+            })
+        </script>
+    </body>
+</html>
